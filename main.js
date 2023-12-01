@@ -22,7 +22,7 @@ newArticle.innerHTML = `
 `;
 
 // Add the new article to the end of the section.posts element
-document.querySelector('section.posts').appendChild(newArticle);
+// document.querySelector('section.posts').appendChild(newArticle);
 
 // Move the first article to become the second and vice versa
 const sectionPosts = document.querySelector('section.posts');
@@ -35,10 +35,7 @@ sectionPosts.insertBefore(secondArticle, firstArticle);
 document.querySelector('header nav a').remove();
 
 // Remove the span element that contains "Read Time" in the featured post
-document.querySelector('section.posts article.featured span').remove();
-
-// Remove the last post from the page titled "Stop Planning"
-document.querySelector('section.posts article:last-of-type').remove();
+document.querySelector('span').remove();
 
 // Remove all titles from all non-featured posts
 document.querySelectorAll('section.posts article:not(.featured) h3').forEach(title => {
